@@ -8,4 +8,147 @@ body {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    /* display: grid; */
+}
+
+
+header{
+    /* border: thick solid black; */
+    /* margin-top: 50px; */
+    background-color: white;
+    font-size: 18px;
+}
+header h1 {
+    float: left;
+}
+
+header nav {
+    color: #6b7280; 
+    float: right;
+    text-align: center;
+    
+}
+
+header nav:hover{
+    color: #5A67D8 ;
+}
+
+nav ul li{
+    display: inline;
+}
+
+
+/* overview-hero */
+
+.overview-hero .container{
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 230px;
+}
+
+.overview-hero-text {
+    /* border:thin solid rgb(173, 53, 53); */
+    grid-column: 2 / 2;
+} 
+
+.overview-hero img {
+    grid-column: 1 / 1;
+    margin: 20px;
+     /* border: thick solid rgb(29, 30, 99); */
+} 
+
+
+/* LEARN ABOUT SECTION */
+.learn-about h2 {
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.learn-about .cards{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 400px;
+    align-content: center;
+}
+/* 
+.learn-about .card img{
+    grid-row: 1 / 1;
+}
+
+.card-body{
+    grid-row: 2 / 1;
+} */
+
+.learn-about .card {
+    border: solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: #E2E8F0;
+    margin: 5px;
+    padding: 5px;
+}
+
+.learn-about h3{
+    color: #48BB78;
+    font-size: 21px;
+}
+
+/* TESTING SECTION */
+.testing{
+    background-color: #4A5568;
+    color: white;
+    /* float: left; */
+
+}
+
+.testing .cta a{
+    border-radius: 5px;
+    background-color: #48BB78;
+    /* float: right; */
+}
+
+
+/* RECENT STORY SECTION */
+
+
+.stories  h2{
+    color: #5A67D8;
+}
+
+.stories  a{
+    color: #5A67D8;
+}
+
+.stories  h3{
+    font-size: 18px;
+}
+
+.stories img {
+    border-radius: 50%;
+    
+}
+
+article img {
+    margin-right: 15px;
+    float: left;
+}
+
+article .article body {
+    float: right;
+}
+
+/* NEW LETTER SECTION */
+
+.newsletter {
+    background-color: #48BB78;
+    color: white;
+}
+
+.newsletter button{
+    background-color: #5A67D8;
+}
+
+footer{
+    background-color: #4A5568;
+    color: white;
 }
